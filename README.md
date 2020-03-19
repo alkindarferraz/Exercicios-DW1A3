@@ -1,3 +1,4 @@
 # Exercicios-DW1A3
-nome: ALkindar Rodrigues
+nome: Alkindar Rodrigues
+
 prontuário: SP3029956

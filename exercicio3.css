@@ -1,0 +1,277 @@
+/* CSS Reset retirado de https://dev.to/hankchizljaw/a-modern-css-reset-6p3
+   Box sizing rules */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Inicio do css pedido no exercicio */
+
+/* Genéricos: elementos que serão usados em todas as partes da pagina
+   a navegação será feita com botões, impede a página de se mover */
+@font-face{
+	font-family: 'LeagueSpartan';
+	src: url("../HTML/LeagueSpartan-Bold.otf");
+}
+
+body {
+	font-family: LeagueSpartan;
+	width: auto;
+	margin: 0px;
+	padding-top: 0px;
+	overflow: hidden;
+}
+
+
+.frame {
+	/* fundo */
+	background-color: #a38560;
+	background-image: linear-gradient(315deg, #a38560 0%, #e0d4ae 74%);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+	
+	/* posicionamento */
+	position: relative;
+	max-width: 100vw;
+	max-height: 100vh;
+	height: 100vh;
+
+	/* browsers compatiblity */
+	-webkit-backgroud-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* botão para trasição entre frames */
+.button {
+	/* visualização */
+	background-color: rgba(200, 200, 200, 0.5);
+	min-width: 10vw;
+	border: none;
+	padding: 1vh 1vw;
+	border-radius: 0.5em;
+	display: inline-block;
+	z-index: 1;
+	
+	/* texto */
+	font-family: sans-serif;
+	font-size: 2.5vh;
+	color: black;
+	text-align: center;
+	text-decoration: none;
+	
+	/* animação */
+	transition-duration: 0.5s;
+}
+
+.forward {
+	/* posição */
+	position: absolute;
+	left: 85vw;
+	top: 90vh;
+
+}
+
+.back {
+	/* posição */
+	position: absolute;
+	left: 85vw;
+	top: 5vh;
+}
+
+.home {
+	/* posição */
+	position: absolute;
+	left: 70vw;
+	top: 5vh;	
+}
+
+.button:hover {
+	background-color: rgba(100, 100, 100, 0.5);
+}
+
+/* Frame 1: título */
+#titulo {
+	background: url("../HTML/03-img1.jpg") no-repeat center center fixed;
+	background-size: cover;
+}
+
+h1 {
+	font-size: 8vh;
+	text-align: left;
+	min-height: 10%;
+	background: inherit;
+	min-width: 100%;
+	padding-left: 2vw;
+	padding-top: 1vh;
+}
+
+/* Genericos para todos os frames com texto: */
+div p {
+	max-height: 90vh;
+	width: 60vw;
+	padding: 6vh 3vw;
+	font-size: 5vh;
+	text-align: left;
+}
+
+/* Frame 2 */
+.image-medium-1 {
+	height: 20vh;
+	width: auto;
+	float: right;
+
+	position: absolute;
+	top: 20vh;
+	left: 50vw;
+	margin-left: 10vw;
+	
+	font-family: sans-serif;
+	font-size: 2vh;
+	text-align: left;
+}
+
+/* Frame 3 */
+#historia p {
+	/* Resetar coisas */
+	max-height: 100vh;
+	width: 100vw;
+
+	/* enquadrar texto */
+	padding-top: 12vh;
+	padding-left: 40vw;
+	padding-bottom: 10vh;
+	padding-right: 5vw;
+
+	/* formatar texto */
+	text-align: right;
+}
+
+.image-medium-2 {
+	position: absolute;
+	max-width: 30vw;
+	margin-top: 20vh;
+	margin-left: 5vw;
+	
+	height: 13vh;
+	font-family: sans-serif;
+	font-size: 2vh;
+}
+
+#id-media p{
+	width: 90vw;
+	padding-top: 12vh;
+}
+
+/* Deixa como tá */
+#olimpiada{}
+
+
+/* Ultimo frame */
+/* link */
+a {
+	color: black;
+}
+
+a:hover {
+	color: #ca8
+}
+
+table{
+	/* posicionamento */
+	position: absolute;
+	left: 60vw;
+	top: 30vh;
+	
+	background-color:#DBA;
+	background-image: linear-gradient(#CA8, #DBA);
+	text-align: center;
+}
+
+/* Cantos da tabela */
+th:first-of-type {
+	padding: 0.5vh 0.5vw;
+	border-radius: 10px 0px 0px 0px;
+}
+
+th:last-of-type {
+	padding: 0.5vh 0.5vw;
+	border-radius: 0px 0px 0px 10px;
+}
+

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta lang="pt-br">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>exercicio 3</title>
+		<style>
+		 td {
+			 width: 12em;
+			 text-align: center;
+		 }
+		 td:first-child{
+			 width: 2em;
+		 }
+
+		 tr:nth-child(even) {
+			 background-color: #777;
+		 }
+		 .table-row-info {
+			 background-color: #FFF;
+		 }
+
+		 .table-header {
+			 background-color: #999;
+		 }
+		 .table-header:nth-child(2){
+			 border-radius: 10px 0px 0px 0px;
+		 }
+		 .table-header:last-child{
+			 border-radius: 0px 10px 0px 0px;
+		 }
+
+		 .corner-left {
+			 border-radius: 0px 0px 0px 10px;
+		 }
+
+		 .corner-right {
+			 border-radius: 0px 0px 10px 0px;
+		 }
+
+		 #formulario {
+			 margin: 2em;
+			 width: 25em;
+		 }
+
+																						</style>
+	</head>
+	<body>
+		<div id="tabela">
+			<h1>Horário semanal</h1>
+			<table>
+				<tr>
+					<th></th>
+					<th class="table-header">Segunda</th>
+					<th class="table-header">Terça</th>
+					<th class="table-header">Quarta</th>
+					<th class="table-header">Quinta</th>
+					<th class="table-header">Sexta</th>
+				</tr>
+				<tr>
+					<td class="table-row-info">7:45</td>
+					<td rowspan="2">Segurança da<br/>informação</td>
+					<td rowspan="5">Engenharia de<br/>Software</td>
+					<td rowspan="5">Linguagem de<br/>Programação</td>
+					<td rowspan="5">Banco de<br/>Dados</td>
+					<td rowspan="2">Estatística e<br/>Probablidade</td>
+				</tr>
+				<tr>
+					<td class="table-row-info">8:30</td>
+				</tr>
+				<tr>
+					<td class="table-row-info">9:30</td>
+					<td rowspan="3" class="corner-left">Redes</td>
+					<td rowspan="3" class="corner-right">Desenvolvimento<br/>Web</td>
+				</tr>
+				<tr>
+					<td class="table-row-info">10:15</td>
+				</tr>
+				<tr>
+					<td class="table-row-info">11:00</td>
+				</tr>
+			</table>
+																										</div>
+		<div id="formulario">
+			<form action="">
+				<fieldset>
+					<legend>Pesquisa acerca de hábitos de higiene bucal</legend>
+					<p>
+						<label>
+							Nome:
+							<input name="nome" type="text"/>
+						</label>
+						<br/>
+						<label>
+							email:
+							<input name="email" type="email" value=""/>
+						</label>
+					</p>
+					<p>
+						Quais destes você usa regularmente?<br/>
+						<input name="metodos" type="checkbox"
+									 value="escova" id="escova"/>
+						<label for="escova">
+							Escova de dentes<br/>
+						</label>
+
+						<input name="metodos" type="checkbox"
+									 value="fio" id="fio" />
+						<label for="fio">
+							Fio dental<br/>
+						</label>
+
+						<label for="enxaguante">
+							<input name="metodos" type="checkbox"
+										 value="enxaguante" id="enxaguante" />
+							Enxaguante bucal
+						</label>
+					</p>
+					<p>
+						Com que frequencia você realiza a higiene bucal?<br/>
+
+						<label>
+							<input name="frquencia" type="radio" value="0"/>
+							Nenhuma vez ao dia<br/>
+												</label>
+						<label>
+							<input name="frquencia" type="radio" value="1"/>
+							Uma vez ao dia<br/>
+						</label>
+						<label>
+							<input name="frquencia" type="radio" value="2"/>
+							Duas vezes ao dia<br/>
+						</label>
+						<label>
+							<input name="frquencia" type="radio" value="3"/>
+							Três vezes ao dia<br/>
+						</label>
+						<label>
+							<input name="frquencia" type="radio" value="4"/>
+							Após cada refeição<br/>
+						</label>
+					</p>
+					<p>
+						Quanto açúcar você consome diariamente?<br/>
+						<select id="acucar">
+							<option value="nenhum">Nenhum</option>
+							<option value="pouco">Pouco</option>
+							<option value="regular">Regular</option>
+							<option value="muito">Muito</option>
+						</select>
+					</p>
+					<textarea name="comments" cols="20" rows="4">
+							Deseja fazer mais algum comentário?
+					</textarea>
+
+					<br/>
+
+					<p>
+						Deseja enviar uma foto que indique o quanto você ama seus dentes?<br/>
+						<input type="file" name="dentes" /><br>
+						<input type="submit" value="Upload" />
+					</p>
+
+				</fieldset>
+			</form>
+		</div>
+	</body>
+</html>

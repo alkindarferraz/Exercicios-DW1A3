@@ -1,0 +1,44 @@
+/* Seletor de descendencia */
+article a {
+	background-color: #F55;
+}
+
+/* Seletor de filho direto */
+p > b {
+	font-weight: normal;
+}
+
+/* Irmão adjacente:
+   pegar a tag a que esteja num paragrafo com b */
+p b + a {
+	color: #000;
+	background-color: #CCC;
+	text-decoration: none;
+}
+
+/* Irmão proximo, todos os <a> imediatamente depois de <p> */
+h3 ~ p {
+	text-align: justify;
+	width: 90%;
+}
+
+/* Pseudo Classes: nth-child(2) */
+p:nth-child(2) {
+	border: solid black 1px;
+	padding: 10px;
+}
+
+p:nth-child(2) a{
+  text-decoration: none;
+}
+
+/* Seletor de atributo */
+p[teste] {
+	border: dotted 2px purple;
+	padding: 10px;
+}
+
+/* Negação */
+:not(article){
+	background-color: #CCC;
+}

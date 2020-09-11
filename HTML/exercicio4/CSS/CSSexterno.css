@@ -1,0 +1,15 @@
+body {
+	margin: 25px;
+	font-family: arial;
+	background-color: rgb(165, 102, 62);
+}
+
+p {
+	width: 99%;
+	text-align: justify;
+}
+
+h1 {
+	color: #45C1A8;
+	font-size: 2em;
+}

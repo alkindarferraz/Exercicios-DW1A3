@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Cor</title>
+		<meta charset="utf-8" />
+
+		<style>
+		 /* Cor em hsl */
+		 body {
+			 background-color: hsla(45, 10%, 60%, 1);
+			 padding: 20px 15px;
+		 }
+
+		 /* Cor em hex */
+		 h1 {
+			 padding: 20px 10px;
+			 background-color: #0474bf;
+			 text-align: center;
+		 }
+
+		 h2 {
+			 background-color: pink;
+			 padding: inhreit;
+			 text-align: center;
+		 }
+
+		 p {
+			 background-color: rgb(255, 255, 255);
+			 padding: inherit;
+			 text-align: justify;
+		 }
+
+		 /* Opacidade e seletores compostos */
+		 body > div > div:first-child{
+			 width: 100px;
+			 height: 100px;
+			 margin: 40px;
+			 display: inline-block;
+			 background-color: #ee3e80;
+		 }
+
+		 body > div > div:last-child{
+			 width: 100px;
+			 height: 100px;
+			 position: relative;
+			 top: -100px;
+			 left: 80px;
+			 /* margin: 80px; */
+			 background-color: rgba(0,0,0,0.5);
+		 }
+
+		</style>
+
+	</head>
+
+	<body>
+		<h1>Biologia Marinha</h1>
+		<h2>A composição da água do mar</h2>
+		<p>Quase tudo pode ser encontrado na água do mar. Isso inclui
+			materiais dissolvidos da crosta terrestre, bem como materiais
+			liberados de organismos. Os componentes mais importantes da água
+			do mar que influenciam as formas de vida são salinidade,
+			temperatura, gases dissolvidos (principalmente oxigênio e dióxido de carbono),
+			nutrientes e pH. Esses elementos variam em sua composição, bem
+			como em sua influência na vida marinha.
+		</p>
+
+		<div class="opacidade">
+			<div class="one"></div>
+			<div class="two"></div>
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Verdana, Monospace
+}
+
+form {
+  padding: 0.8rem 0rem 0rem 0.8rem;
+}
+
+p {
+  max-width: 14rem;
+  border: 0.1rem solid black;
+  padding: 0.4rem 0.1rem 0.1rem 0.4rem;
+}
+
+div p {
+  border: none;
+}
+
+.field-mensagem {
+  max-width: 14rem;
+  border: 0.1rem solid black;
+}
+
+textarea {
+  max-width: 13.5rem;
+}

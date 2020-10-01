@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Calculos JS</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../CSS/aula8-1.css"
+          type="text/css" media="screen" />
+  </head>
+  <body>
+    <div class="soma">
+      <form>
+        <input name="valor1" type="number" />
+        <br/>+
+        <input name="valor2" type="number" />
+        <hr/>
+        <span id="resultadoSoma"></span>
+        <br>
+        <button type="submit" id="calcularSoma">Calcular</button>
+      </form>
+    </div>
+
+    <div class="fatorial">
+      <form>
+        <p>Calcular o fatorial de</p>
+        <input name="fatorial" type="number"/>
+        <br>
+        <span id="resultadoFatorial"></span>
+        <button id="calcularFatorial" type="submit">
+          Calcular
+        </button>
+        <br/>
+      </form>
+    </div>
+
+    <script type="text/javascript">
+     function soma() {
+       let inp1 = document.querySelector("input[name=\"valor1\"]");
+       let inp2 = document.querySelector("input[name=\"valor2\"]");
+
+       inp1 = parseInt(inp1.value);
+       inp2 = parseInt(inp2.value);
+
+       return inp1 + inp2
+     }
+
+     function handleSoma(e) {
+       e.preventDefault();
+       const res = document.querySelector("#resultadoSoma");
+       res.innerText = soma();
+       return false;
+     }
+
+     const fatorial = (n) => {
+       if (n < 0)
+         return -1;
+       let f = 1;
+       for(let i = 1; i <= n; i++)
+         f *= i;
+       return f;
+     };
+
+     const handleFat = (e) => {
+       e.preventDefault();
+       const inp = document.querySelector("input[name=\"fatorial\"]");
+       const res = document.querySelector("#resultadoFatorial")
+       res.innerText = inp.value + "! = " + fatorial(inp.value);
+       return false;
+     }
+
+
+     //add eventlistener
+     const inputSoma = document.querySelector("#calcularSoma");
+     inputSoma.addEventListener("click", handleSoma);
+     const inputFat = document.querySelector("#calcularFatorial");
+     inputFat.addEventListener("click", handleFat);
+
+    </script>
+  </body>
+</html>

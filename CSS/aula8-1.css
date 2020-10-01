@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+/* estilizar soma */
+
+.soma {
+  width: 250px;
+  height: 200px;
+  background-color: #FAA;
+  border-radius: 15px;
+  padding: 15px 10px;
+  /* margin: 0px 0px 10px 0px; */
+}
+
+.soma input{
+  margin: 15px;
+}
+
+form input:first-child{
+  margin: 15px 28px;
+}
+
+#resultadoSoma {
+  padding: 0px 0px 0px 31px;
+}
+
+#calcularSoma{
+  position: absolute;
+  top: 160px;
+  left: 8px;
+  background-color: #F8C;
+  border-radius: 0px 0px 15px 15px;
+  border: none;
+  width: 250px;
+  height: 50px;
+}
+
+/* estilizar fatorial  */
+
+.fatorial {
+  width: 250px;
+  height: 150px;
+  background-color: #FAA;
+  border-radius: 15px;
+  padding: 15px 10px;
+  margin: 25px 0px 0px 0px;
+
+}
+
+.fatorial > form > input {
+  margin-bottom: 10px;
+}
+
+
+#calcularFatorial {
+  position: absolute;
+  top: 366px;
+  left: 8px;
+  background-color: #F8C;
+  border-radius: 0px 0px 15px 15px;
+  border: none;
+  width: 250px;
+  height: 50px;
+}
